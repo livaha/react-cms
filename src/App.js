@@ -1,13 +1,20 @@
 import React from 'react';
-import {Button} from 'antd'
-import './App.css';
+import { Layout } from 'antd';
+
+const { Header, Footer, Sider, Content } = Layout;
 
 function App() {
-  return (
-    <div className="App">
-      <Button type="primary">Button</Button>
-      <a href="www.baidu.com">baidu</a>
-    </div>
+  return (<div>
+    <Layout>
+      <Header style={{color:'#fff',background:'#7dbcea'}}>Header</Header>
+      <Layout>
+        <Content style={{color:'#7dbcea',background:'#fff'}}>Content</Content>
+        <Sider style={{color:'#7dbcea',background:'#3ba0e9',height:380}}>Sider</Sider>
+      </Layout>
+      <Footer style={{color:'#fff',background:'#7dbcea'}}>Footer</Footer>
+    </Layout>
+
+  </div>
   );
 }
 
