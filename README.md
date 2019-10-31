@@ -7,6 +7,8 @@
 #### 版本使用
 
 > "react": "^16.11.0"
+>
+> "antd": "^3.24.3"
 
 #### 开发目标
 
@@ -21,7 +23,20 @@
 
 #### 目录结构
 
-> 
+~~~
+├── README.md
+├── CHANGLOG.MD
+├── package.json
+├── public
+│   ├── favicon.ico
+│   └── index.html
+├── src
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.js
+└── yarn.lock
+~~~
 
 
 
