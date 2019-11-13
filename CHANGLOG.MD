@@ -1,6 +1,10 @@
 # CHANGLOG
 
 
+## 2019-11-13
+> 1 添加layout
+> 
+> 2 添加react-router
 
 ## 2019-10-31
 

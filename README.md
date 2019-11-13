@@ -21,23 +21,13 @@
 >3 yarn
 >4 yarn start
 
-#### 目录结构
 
-~~~
-├── README.md
-├── CHANGLOG.MD
-├── package.json
-├── public
-│   ├── favicon.ico
-│   └── index.html
-├── src
-│   ├── App.css
-│   ├── App.js
-│   ├── App.test.js
-│   ├── index.js
-└── yarn.lock
-~~~
-
+#### Todo List
+* [x] 引入antd并定制化主题
+* [ ] 根据窗口大小调整web页面大小（技术点：防抖节流）
+* [ ] 添加国际化语言
+* [ ] 滚动加载、懒加载
+* [ ] React Hook 示例
 
 
 
