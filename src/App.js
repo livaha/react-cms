@@ -1,23 +1,14 @@
 import React from 'react';
-import { Layout } from 'antd';
-import ListUpdate from './ListUpdate';
-
-const { Header, Footer, Sider, Content } = Layout;
+import { BrowserRouter } from "react-router-dom";
+import Routes from './routes';
+import Frame from './layout/Frame';
 
 function App() {
-  return (<div>
-    <Layout>
-      <Header style={{color:'#fff',background:'#7dbcea'}}>Header</Header>
-      <Layout>
-        <Content style={{color:'#7dbcea',background:'#fff'}}>
-          <ListUpdate/>
-        </Content>
-        {/*<Sider style={{color:'#7dbcea',background:'#3ba0e9',height:380}}>Sider</Sider>*/}
-      </Layout>
-      <Footer style={{color:'#fff',background:'#7dbcea'}}>Footer</Footer>
-    </Layout>
-
-  </div>
+  return (<BrowserRouter>
+    <Frame>
+      <Routes/>
+    </Frame>
+  </BrowserRouter>
   );
 }
 
