@@ -7,7 +7,7 @@ const { Header, Footer, Sider, Content } = Layout;
 export default function Frame(props) {
   return (<div>
     <Layout className="layout">
-      <Header className="header">Header</Header>
+      {/*<Header className="header">Header</Header>*/}
 
       <Layout>
         <Content className="content">
@@ -18,7 +18,7 @@ export default function Frame(props) {
         </Sider>
       </Layout>
       
-      <Footer className="footer">Footer</Footer>
+      {/*<Footer className="footer">Footer</Footer>*/}
       </Layout>
 
   </div>)
