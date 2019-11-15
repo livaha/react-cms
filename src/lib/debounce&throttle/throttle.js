@@ -8,6 +8,7 @@ let throttle1 = function(func,delay){
     return function(){
         let context = this;
         let args = arguments;
+        /**Date.now()返回时间戳，+new Date()也是返回时间戳 */
         let now = Date.now();
         if(now - prev > delay){
             func.apply(context,args);

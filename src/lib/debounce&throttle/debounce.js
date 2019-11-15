@@ -1,14 +1,19 @@
 /**防抖函数 */
-function debounce (fn,wait){
-    let timeout = null;
+function debounce(fn,delay){
+    let timer = null;
     return function(){
-        if(timeout !== null){
-            clearTimeout(timeout);
+        let _this = this;
+        let args = arguments;
+        if(timer){
+            clearTimeout(timer);
         }
-        timeout = setTimeout(fn,wait);
+        timer = setTimeout(function(){
+            fn.apply(_this,args);
+        },delay)
         console.log('scoll')
     }
 }
+
 function handle(){
     console.log(Math.random());
 }
