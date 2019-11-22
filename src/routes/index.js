@@ -10,9 +10,6 @@ export default function Routes(){
     return (
         <div>
             <Switch>
-                <Route path="/">
-                    <HookMovie/>
-                </Route>
                 <Route path="/list">
                     <ListUpdate/>
                 </Route>
@@ -21,6 +18,9 @@ export default function Routes(){
                 </Route>
                 <Route path="/router">
                     <Demo/>
+                </Route>
+                <Route path="/">
+                    <HookMovie/>
                 </Route>
 
             </Switch>

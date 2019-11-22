@@ -1,5 +1,7 @@
 # CHANGLOG
 
+## 2019-11-22
+> 1 添加hook-movie (使用hook属性useReducer)
 
 ## 2019-11-13
 > 1 添加layout
