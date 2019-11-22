@@ -47,9 +47,9 @@ const HookMovie = () =>{
 
     const renderMovies = 
         loading && !errorMessage?(
-            <img src={spinner} alt='Loadding spinner'/>
+            <img className="spinner" src={spinner} alt='Loadding spinner'/>
         ):errorMessage?(
-        <div>{errorMessage}</div>
+        <div className="errormsg">{errorMessage}</div>
         ):(
             movies.map((movie,index)=>(
                 <Movie key='index' movie={movie}/>
