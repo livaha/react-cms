@@ -5,7 +5,10 @@ function Nav() {
   return (<div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">React Hook Movie</Link>
+          </li>
+          <li>
+            <Link to="/router">Router</Link>
           </li>
           <li>
             <Link to="/list">List</Link>
